@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The repository starts from the default `flutter create` scaffold and is being built up over a deliberate **Week 1 skeleton bootstrap** — Clean Architecture + BLoC, infrastructure only, **no domain features yet**. The bootstrap is paced across ~5-7 evenings against a plan kept in the user's personal notes vault (and mirrored in Claude Code project memory). Before starting any evening's work, re-read the plan, do exactly that evening's steps, and resist scope creep.
 
-Dart SDK constraint: `^3.8.1` (see `pubspec.yaml`). Lints come from `flutter_lints` via `analysis_options.yaml`. Until structural code lands, treat any architectural decision as greenfield against the conventions below.
+Dart SDK constraint: `^3.8.1` declared in `pubspec.yaml`, but `drift_dev ^2.33.0` requires Dart `>=3.10.0` at resolve time — so the effective floor is Dart 3.10. Lints come from `flutter_lints` via `analysis_options.yaml` plus the strict rule set listed there. Until structural code lands, treat any architectural decision as greenfield against the conventions below.
 
 ## Target architecture (not all on disk yet)
 
@@ -49,11 +49,11 @@ flutter build apk --debug --no-shrink  # debug Android build
 flutter build ios                      # iOS build (requires Xcode)
 ```
 
-Once code generation dependencies land (Evening 2+), also:
+Code generation (drift now wired; freezed / json_serializable will activate when uncommented in `pubspec.yaml`):
 
 ```bash
 dart run build_runner build --delete-conflicting-outputs   # drift / freezed / json_serializable codegen
-flutter gen-l10n                                            # regenerate ARB-driven localisations
+flutter gen-l10n                                            # regenerate ARB-driven localisations (after Evening 4)
 ```
 
 ## Out of scope until later phases
