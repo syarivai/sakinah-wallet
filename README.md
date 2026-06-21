@@ -1,16 +1,32 @@
 # sakinah_wallet
 
-Sharia-compliant personal finance
+Sharia-compliant personal finance — a Flutter, local-first MVP built on Clean
+Architecture + BLoC.
 
-## Getting Started
+> **Status:** Week 1 skeleton bootstrap — infrastructure only, **no domain
+> features yet**. See [`plans/`](plans/) for what's planned.
 
-This project is a starting point for a Flutter application.
+## Quick start
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+dart run build_runner build --delete-conflicting-outputs   # drift codegen
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+New to the project? Follow the [Getting started tutorial](docs/tutorials/getting-started.md).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Documentation
+
+- [`docs/`](docs/) — full documentation, organised with the
+  [Diátaxis](https://diataxis.fr/) framework (tutorials / how-to / reference /
+  explanation). Start at [`docs/README.md`](docs/README.md).
+- [`plans/`](plans/) — staged execution plans (`backlog/ → in-progress/ → done/`).
+- [`CLAUDE.md`](CLAUDE.md) — working instructions for the AI assistant.
+
+Common entry points:
+
+- Run, analyse, and test → [docs/how-to/run-and-test.md](docs/how-to/run-and-test.md)
+- Architecture & the dependency rule → [docs/explanation/architecture.md](docs/explanation/architecture.md)
+- Tech stack & versions → [docs/reference/tech-stack.md](docs/reference/tech-stack.md)
+- Unfamiliar term (zakat, hawl, BLoC, drift)? → [docs/explanation/glossary.md](docs/explanation/glossary.md)

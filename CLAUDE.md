@@ -6,9 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `sakinah_wallet` is a Flutter app intended to be a Sharia-compliant personal finance tool.
 
-The repository starts from the default `flutter create` scaffold and is being built up over a deliberate **Week 1 skeleton bootstrap** — Clean Architecture + BLoC, infrastructure only, **no domain features yet**. The bootstrap is paced across ~5-7 evenings against a plan kept in the user's personal notes vault (and mirrored in Claude Code project memory). Before starting any evening's work, re-read the plan, do exactly that evening's steps, and resist scope creep.
+The repository starts from the default `flutter create` scaffold and is being built up over a deliberate **Week 1 skeleton bootstrap** — Clean Architecture + BLoC, infrastructure only, **no domain features yet**. The bootstrap is paced across ~5-7 evenings against the plans in [`plans/`](plans/) — see [`plans/in-progress/01-week-1-skeleton.md`](plans/in-progress/01-week-1-skeleton.md) for the evening-by-evening steps and [`plans/in-progress/00-overview.md`](plans/in-progress/00-overview.md) for the master roadmap. Before starting any evening's work, re-read the relevant plan, do exactly that evening's steps, and resist scope creep.
 
 Dart SDK constraint: `^3.8.1` declared in `pubspec.yaml`, but `drift_dev ^2.33.0` requires Dart `>=3.10.0` at resolve time — so the effective floor is Dart 3.10. Lints come from `flutter_lints` via `analysis_options.yaml` plus the strict rule set listed there. Until structural code lands, treat any architectural decision as greenfield against the conventions below.
+
+## Documentation
+
+Project docs live in [`docs/`](docs/), organised with the Diátaxis framework (tutorials / how-to / reference / explanation) — start at [`docs/README.md`](docs/README.md). They cover the same ground as this file in more depth (architecture, conventions, tech stack, testing, security, sharia domain). When a convention here and a doc disagree, fix both. Staged execution plans are in [`plans/`](plans/); the public entry point is the top-level [`README.md`](README.md).
 
 ## Target architecture (not all on disk yet)
 
