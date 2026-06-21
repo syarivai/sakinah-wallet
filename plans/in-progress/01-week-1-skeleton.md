@@ -393,8 +393,8 @@ If all of those are true, you have a foundation worth building on. If any one is
 ## 🔗 Related
 
 - [Plan 00 — Project Overview & Roadmap](00-overview.md)
-- Flutter Best Practices (private notes vault)
-- Flutter Folder Best Practices (private notes vault)
+- [Flutter Best Practices](../../docs/reference/flutter/flutter-best-practices.md)
+- [Flutter Folder Best Practices](../../docs/reference/flutter/flutter-folder-structure.md)
 
 ---
 

@@ -664,10 +664,15 @@ The following came up during this project's planning and would benefit the share
 
 - [Plan 01 — Week 1 Skeleton Bootstrap](01-week-1-skeleton.md)
 
-Reference material lives in the owner's private notes vault (not in this repo):
-Flutter Learning Hub · Flutter Best Practices · Flutter Folder Best Practices ·
-Flutter States and Lifecycle · Flutter Architecture · Personal Projects Hub ·
-FinSplit (related full-stack project).
+Flutter conventions this project follows (vendored into the repo under
+[`docs/reference/flutter/`](../../docs/reference/flutter/)):
+[Architecture](../../docs/reference/flutter/flutter-architecture.md) ·
+[Best Practices](../../docs/reference/flutter/flutter-best-practices.md) ·
+[Folder Structure](../../docs/reference/flutter/flutter-folder-structure.md) ·
+[States & Lifecycle](../../docs/reference/flutter/flutter-state-lifecycle.md).
+
+Other reference material remains in the owner's private notes vault (Flutter
+Learning Hub, Personal Projects Hub, FinSplit).
 
 ---
 

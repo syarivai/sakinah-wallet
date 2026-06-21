@@ -56,6 +56,8 @@ quadrant by the reader's need, not by the topic.
 - [Tech stack & versions](./reference/tech-stack.md)
 - [Conventions](./reference/conventions.md)
 - [Database schema (drift)](./reference/database-schema.md)
+- [Flutter reference notes](./reference/flutter/) — vendored general Flutter
+  conventions (architecture, best practices, folder structure, state & lifecycle).
 
 ### Explanation (understanding-oriented)
 
